@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="scr/eye-solid.svg" type="image/png">
-
 </head>
 <body>
     <div class="page-container">
         <header class="header">
-            <a href="#" class="logo">serenity.</a>
+            <a href="#" class="logo">serenity.exyf</a>
             <nav class="navbar">
                 <a href="index.html" class="active">Home</a>
                 <a href="https://github.com/alterseren">About</a>
@@ -36,11 +35,12 @@
                 </div>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/58CiGiB8a6IifBKbIj6PZS?utm_source=generator" class="playlist" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="fast"></iframe>
             </section>
-
-            
         </main>
 
         <footer class="footer">
+            <div class="clock">
+                <h1 id="time"></h1>
+            </div>
             <p>&copy; 2024 alterseren. All rights reserved.</p>
             <p>
                 <a href="#">Privacy Policy</a> 
@@ -48,5 +48,20 @@
             </p>
         </footer>
     </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('time').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); 
+    </script>
+    
 </body>
 </html>
