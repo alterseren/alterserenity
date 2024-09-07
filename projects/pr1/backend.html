@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleback.css">
+    <title>Post Your Requirements</title>
+</head>
+<body>
+  <div class="all">
+    <div class="intro_text">
+    </div>
+    <div class="container">
+        <h1>Your Requirements</h1>    
+        <form action="backend.html" method="get" autocomplete="on">
+            <div class="add_bot_line">
+                <label for="space_type" class="up-text">Space Type</label>
+                <input type="text" id="space_type" name="space_type" placeholder="Event Space" required>
+
+                <label for="check_in" class="up-text">Check In</label>
+                <input type="date" id="check_in" name="check_in" required>
+
+                <label for="check_out" class="up-text">Check Out</label>
+                <input type="date" id="check_out" name="check_out" required>
+
+                <label for="number_of_people" class="up-text">Number of People</label>
+                <input type="text" id="number_of_people" name="number_of_people" placeholder="01" required>
+                
+                <label for="location" class="up-text">Location</label>
+                <input type="text" id="location" name="location" placeholder="City/Area" required>
+                
+                <label for="preference" class="up-text">Any Specific Preference</label>
+                <input type="text" id="preference" name="preference" placeholder="Yes/No" required>
+                <input type="text" id="details" name="details" placeholder="Please mention here" required>
+            </div>
+            <button type="submit" class="btn">Next</button>
+            <a href="index.html" class="btn">Back</a>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
