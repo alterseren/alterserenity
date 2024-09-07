@@ -54,3 +54,13 @@ body {
     color: #fff;
     border-color: #d38383; 
 }
+
+.btn-back {
+    background: #ff4b5c; 
+    border-color: #ff4b5c;
+    color: #fff;
+}
+
+.btn-back:hover {
+    background: #ff6b81; 
+    border-color: #ff6b81;
