@@ -42,6 +42,8 @@ body {
     font-weight: 600;
 }
 
+
+
 .navbar a {
     font-size: 18px;
     color: #fff;
@@ -75,6 +77,7 @@ body {
 
 .home-content h1 {
     font-size: 56px;
+    color: #fff;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -82,12 +85,13 @@ body {
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
-    color: #333F50;
+    color: #00abf0;
 }
 
 .home-content p {
     font-size: 16px;
     margin: 2px 0 40px;
+    color: #fff;
 }
 
 .home-content .btn-box {
@@ -149,6 +153,7 @@ body {
     border-radius: 50%;
 }
 .footer {
+    background: rgba(0, 0, 0, 0.4); /* Увеличиваем прозрачность до 0.7 */
     color: #ededed;
     text-align: center;
     padding: 20px;
@@ -171,5 +176,5 @@ body {
 }
 
 .playlist {
-    margin-left: 180px; 
+    margin-left: 60px; /* или любое другое значение, которое вам подходит */
 }
