@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name</title>
+    <script>
+        function getNames() {
+            var names = "";
+            while (true) {
+                var name = prompt("ім'я");
+                if (name === null) {
+                    break;
+                }
+                names += name + "<br>";
+            }
+            document.write(names);
+        }
+    </script>
+</head>
+<body onload="getNames();">
+</body>
+</html>

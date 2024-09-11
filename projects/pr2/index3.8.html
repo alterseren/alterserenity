@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hello world</title>
+    <script>
+        function findSeason() {
+            var month = parseInt(prompt("Enter the month number 1-12:"));
+            var season;
+            if (month == 12 || month == 1 || month == 2) {
+                season = "Winter";
+            } else if (month >= 3 && month <= 5) {
+                season = "Spring";
+            } else if (month >= 6 && month <= 8) {
+                season = "Summer";
+            } else if (month >= 9 && month <= 11) {
+                season = "Fall";
+            } else {
+                season = "error";
+            }
+            alert("season: " + season);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="findSeason();">Find Season</button>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students List</title>
+    <script>
+        function getStudents() {
+            var count = parseInt(prompt("Номер студнта: "));
+            var students = "";
+            for (var i = 0; i < count; i++) {
+                var name = prompt("Ім'я студента  " + (i + 1) + ":");
+                students += name + "<br>";
+            }
+            document.write(students);
+        }
+    </script>
+</head>
+<body onload="getStudents();">
+</body>
+</html>
