@@ -10,19 +10,19 @@
 body {
     background-image: url('scr/back.jpg');
     background-size: cover; 
- 
     background-repeat: no-repeat; 
     height: 100%;
 }
 
 .btn-box a {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: #ce4747;
+    border: 2px solid #ce4747;
     border-radius: 8px;
     font-size: 19px;
     color: #fff;
@@ -32,8 +32,7 @@ body {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
-    margin: 5px;
-    position: relative;
+    margin: 10px;
 }
 
 .btn-box a::before {
@@ -43,7 +42,7 @@ body {
     left: 0;
     width: 0%;
     height: 100%;
-    background: #333F50;
+    background: #d38383;
     z-index: -1;
     transition: .5s;
 }
@@ -54,16 +53,5 @@ body {
 
 .btn-box a:hover {
     color: #fff;
-    border-color: #d38383; 
-}
-
-.btn-back {
-    background: #ff4b5c; 
-    border-color: #ff4b5c;
-    color: #fff;
-}
-
-.btn-back:hover {
-    background: #ff6b81; 
-    border-color: #ff6b81;
+    border-color: #d38383;
 }
