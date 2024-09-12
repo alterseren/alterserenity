@@ -9,8 +9,7 @@
 
 body {
     background-image: url('scr/back.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
+
     height: 100%;
 }
 
