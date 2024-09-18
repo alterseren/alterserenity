@@ -2,115 +2,41 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>alterseren</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Інтерфейс за зразком</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="scr/eye-solid.svg" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- snow -->
-    <div class="snowflakes" id="snowflakes" aria-hidden="true">
-      <div class="snowflake"></div>
-      <div class="snowflake"></div>
-      <div class="snowflake"></div>
-      <div class="snowflake"></div>
-      <div class="snowflake"></div>
-      <div class="snowflake"></div>
-    </div>
-    <div class="blurred-background"></div>
-    <div class="page-container">
-      <header class="header">
-        <a href="#" class="logo">serenity.exyf</a>
-        <nav class="navbar">
-          <a href="index.html" class="active">Home</a>
-          <a href="https://github.com/alterseren">About</a>
-          <a href="project.html">Projects</a>
-          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Contact</a>
-        </nav>
-      </header>
-      <main class="content">
-        <section class="home">
-          <div class="home-content">
-            <div class="profile-photo-wrapper">
-              <img src="scr/pfp.gif" alt="" class="profile-photo" />
-            </div>
-            <h1>alterserenity</h1>
-            <h3>cxrse</h3>
-            <p>died from the overwhelming weight of meaning.</p>
-            <div class="btn-box">
-              <a href="https://github.com/alterseren">me</a>
-              <a
-                href="https://open.spotify.com/playlist/3XvdTxRDdxBx81nKF09UZD?si=19a414e9e7874817"
-                >playlist</a
-              >
-            </div>
-          </div>
-          <div class="playlist-wrapper">
-            <iframe
-              style="border-radius: 12px"
-              src="https://open.spotify.com/embed/playlist/3XvdTxRDdxBx81nKF09UZD?utm_source=generator&theme=0"
-              width="100%"
-              height="352"
-              frameborder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            ></iframe>
-          </div>
-        </section>
+    <!-- Верхня панель -->
+    <header class="top-bar">
+      <button class="icon-btn"><i class="fas fa-home"></i></button>
+      <button class="icon-btn"><i class="fas fa-network-wired"></i></button>
+      <button class="icon-btn"><i class="fas fa-font"></i></button>
+      <button class="icon-btn"><i class="fas fa-cog"></i></button>
+    </header>
+
+    <!-- Основний контейнер -->
+    <div class="container">
+      <!-- Лівий сайдбар -->
+      <aside class="sidebar">
+        <button class="icon-btn"><i class="fab fa-slack"></i>куп</button>
+        <button class="icon-btn"><i class="fas fa-code"></i></button>
+        <button class="icon-btn"><i class="fas fa-gamepad"></i></button>
+        <button class="icon-btn">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </button>
+      </aside>
+
+      <!-- Основна частина з графом -->
+      <main class="main-content">
+        <div id="graph"></div>
       </main>
-      <img
-        src="scr/citya.gif"
-        alt=""
-        class="citya"
-        style="width: 100px; height: auto"
-      />
-      <footer class="footer">
-        <div class="clock">
-          <h1 id="time"></h1>
-        </div>
-        <div class="footer-links">
-          <p>&copy; 2024 alterseren. All rights reserved.</p>
-          <p>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-          </p>
-        </div>
-        <button id="toggleSnow" class="snow-toggle-button">OFF/ON Snow</button>
-      </footer>
     </div>
 
-    <!-- time -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-
-      function updateClock() {
-        const now = new Date();
-        const timeString = now.toTimeString().split(" ")[0];
-        document.getElementById("time").textContent = timeString;
-      }
-
-      setInterval(updateClock, 1000);
-      updateClock();
-
-      document.getElementById("toggleSnow").addEventListener("click", () => {
-        const snowflakes = document.getElementById("snowflakes");
-        snowflakes.style.display =
-          snowflakes.style.display === "none" ? "block" : "none";
-      });
-    </script>
+    <script src="scripts.js"></script>
   </body>
 </html>
