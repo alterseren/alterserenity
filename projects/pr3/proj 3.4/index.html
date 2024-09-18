@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маланюк Назарій Пі-21-03</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="slideshow-container">
+        <img class="slides" src="p1.jpg" alt="">
+        <img class="slides" src="p2.jpg" alt="">
+        <img class="slides" src="p3.jpg" alt="">
+        <button class="slide-button" onclick="prevSlide()">Попередній</button>
+        <button class="slide-button" onclick="nextSlide()">Наступний</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        showSlide(currentSlide);
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slides');
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            const slides = document.querySelectorAll('.slides');
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            const slides = document.querySelectorAll('.slides');
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+    </script>
+</body>
+</html>
