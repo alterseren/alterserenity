@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("scr/back.jpg");
+  font-family: Arial, sans-serif;
+}
+
+.btn-box {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  background: #ce4747;
+  border: 2px solid #ce4747;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+.btn-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #d38383;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box:hover::before {
+  width: 100%;
+}
+
+.btn-box:hover {
+  color: #fff;
+  border-color: #d38383;
+}
+
+.output {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  max-width: 400px;
+  border: 2px solid #ce4747;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+}
