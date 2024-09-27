@@ -8,15 +8,17 @@
 }
 
 body {
-  background-image: url("scr/back.jpg");
+  background-image: url("https://github.com/alterseren/alterserenity/blob/main/scr/back.jpg?raw=true");
+
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 .btn-box {
   position: relative;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
+
   width: 200px;
   height: 50px;
   background: #ce4747;
@@ -56,7 +58,7 @@ body {
 
 .output {
   margin-top: 20px;
-  padding: 10px;
+  padding: 20px;
   background-color: #f4f4f4;
   max-width: 400px;
   border: 2px solid #ce4747;
@@ -64,9 +66,13 @@ body {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 50px;
   color: #fff;
   font-weight: 700;
   line-height: 1.2;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+}
+
+.moto {
+  display: flex;
 }
