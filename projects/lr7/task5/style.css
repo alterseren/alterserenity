@@ -1,0 +1,43 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+#captcha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#captcha span {
+  width: 20px;
+  height: 30px;
+  margin: 0 5px;
+  font-size: 24px;
+  background-color: #f0f0f0;
+
+  line-height: 30px;
+  text-align: center;
+  font-family: "Silkscreen", sans-serif;
+  color: red; 
+}
+
+#userInput {
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}

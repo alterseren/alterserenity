@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+#rotator img {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+}
+
+#rotator div {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#rotator a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+#rotator a.disabled {
+    color: grey;
+    pointer-events: none;
+}
