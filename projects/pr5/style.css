@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    background-image: url("https://github.com/alterseren/alterserenity/blob/main/scr/back.jpg?raw=true");
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #000000;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+}
