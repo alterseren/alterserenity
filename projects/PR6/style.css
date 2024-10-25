@@ -1,0 +1,14 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#map {
+    height: 80%;
+    width: 80%;
+}
