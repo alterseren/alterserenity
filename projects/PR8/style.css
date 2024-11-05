@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: #ffffff;
+  background-color: #121212;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F9361618.jpg&f=1&nofb=1&ipt=016002550d6a4c07e8544b9bf4e38085e2a9d265f04199b4f14d1875e5df4a72&ipo=images');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+#cart-icon {
+  cursor: pointer;
+  color: #ffc107;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.product {
+  border: 1px solid #444;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  margin: 10px;
+  position: relative;
+  background-color: rgba(30, 30, 30, 0.9);
+  z-index: 2;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ffc107;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e0a800;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.product-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #28a745;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-label.hit {
+  background-color: #007bff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+footer .social-media {
+  margin-top: 10px;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

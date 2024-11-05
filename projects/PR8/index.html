@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AUTO</h1>
+        <div id="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main class="product-list">
+        <article class="product">
+            <div class="product-label">Новинка</div>
+            <img src="https://www.carid.com/images/inspiration/tesla/model-s/19/4.jpg" alt="Tesla Model S">
+            <h2>Tesla Model S</h2>
+            <p>52,500 грн</p>
+            <button onclick="addToCart('Tesla Model S', 52500)">У корзину</button>
+        </article>
+
+        <article class="product">
+            <div class="product-label hit">Хіт продажу</div>
+            <img src="https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2022/12/toyota-corolla-hybrid-1.jpg" alt="Toyota Corolla">
+            <h2>Toyota Corolla</h2>
+            <p>65,500 грн</p>
+            <button onclick="addToCart('Toyota Corolla', 65500)">У корзину</button>
+        </article>
+
+        <article class="product">
+            <div class="product-label hit">Хіт продажу</div>
+            <img src="https://media.ed.edmunds-media.com/bmw/3-series/2017/oem/2017_bmw_3-series_sedan_340i_fq_oem_10_1280.jpg" alt="BMW 3 Series">
+            <h2>BMW 3 Series</h2>
+            <p>55,500 грн</p>
+            <button onclick="addToCart('BMW 3 Series', 55500)">У корзину</button>
+        </article>
+
+        <article class="product">
+            <div class="product-label hit">Хіт продажу</div>
+            <img src="https://cdn.automobile-propre.com/uploads/2023/05/Toyota-RAV4-Trail-2023-1.jpg" alt="Toyota RAV4">
+            <h2>Toyota RAV4</h2>
+            <p>75,000 грн</p>
+            <button onclick="addToCart('Toyota RAV4', 75000)">У корзину</button>
+        </article>
+
+        <article class="product">
+            <div class="product-label hit">Хіт продажу</div>
+            <img src="https://media.whatcar.com/wc-image/2019-05/audi_s4_front_studio.jpg" alt="Audi A4">
+            <h2>Audi A4</h2>
+            <p>70,000 грн</p>
+            <button onclick="addToCart('Audi A4', 70000)">У корзину</button>
+        </article>
+
+        <article class="product">
+            <div class="product-label hit">Хіт продажу</div>
+            <img src="http://upload.wikimedia.org/wikipedia/commons/1/1b/Ford_Mustang_-_Flickr_-_exfordy.jpg" alt="Ford Mustang">
+            <h2>Ford Mustang</h2>
+            <p>90,000 грн</p>
+            <button onclick="addToCart('Ford Mustang', 90000)">У корзину</button>
+        </article>
+    </main>
+
+
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
