@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url('/projects/lr7json/img/background.gif');
+  background-position: center;
+}
+
+header {
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Faster One', sans-serif;
+  box-shadow: 0 4px 2px -2px #000;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #444;
+}
+
+.hero-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px;
+}
+
+.hero-card {
+  border: 1px solid #444;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #1e2a38;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.hero-card:hover {
+  box-shadow: 0 2px 8px rgba(220, 62, 252, 0.2);
+}
+
+.hero-card h2 {
+  color: #ffffff;
+}
+
+.hero-card ul {
+  cursor: pointer;
+  list-style: none;
+  padding: 0;
+  color: #ccc;
+}
+
+.hero-card ul li {
+  background: #2a3a47;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.hero-card ul li:hover {
+  box-shadow: 0 2px 8px rgba(252, 62, 62, 0.2);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero-card {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  header {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-card {
+    padding: 8px;
+    margin: 8px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-card h2 {
+    font-size: 1.5em;
+  }
+
+  .hero-card ul li {
+    font-size: 0.9em;
+  }
+}
